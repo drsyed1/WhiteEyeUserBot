@@ -10,7 +10,7 @@ from telethon.errors.rpcerrorlist import FloodWaitError
 from telethon.tl.functions.account import UpdateProfileRequest
 from telethon.tl.functions.users import GetFullUserRequest
 
-from WhiteEyeBot import (
+from WhiteEyeUserBot import (
     BIO_PREFIX,
     BOTLOG,
     BOTLOG_CHATID,
