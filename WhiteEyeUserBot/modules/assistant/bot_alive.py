@@ -13,7 +13,6 @@
 
 
 from WhiteEyeUserBot import ALIVE_NAME
-from WhiteEyeUserBot.modules import currentversion
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
 PM_IMG = "https://telegra.ph/file/63a02b3ef3245b321e54a.jpg"
