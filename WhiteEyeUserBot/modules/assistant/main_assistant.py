@@ -65,8 +65,8 @@ async def start(event):
             message=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.inline("Deploy your Friday 🇮🇳", data="deploy")],
-                [Button.url("Help Me ❓", "t.me/Fridayot")],
+                [custom.Button.inline("Deploy your WhiteEye 🇮🇳", data="deploy")],
+                [Button.url("Help Me ❓", "t.me/WhiteEyeOT")],
             ],
         )
 
