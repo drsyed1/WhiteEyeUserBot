@@ -1,8 +1,8 @@
 from telethon import events, utils
 from telethon.tl import types
 
-from WhiteEyeBot.Configs import Config
-from WhiteEyeBot.modules.sql_helper.snips_sql import (
+from WhiteEyeUserBot.Configs import Config
+from WhiteEyeUserBot.modules.sql_helper.snips_sql import (
     add_snip,
     get_all_snips,
     get_snips,
