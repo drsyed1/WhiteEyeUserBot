@@ -1,6 +1,6 @@
 import asyncio
 
-from WhiteEyeBot.utils import WhiteEye_on_cmd
+from WhiteEyeUserBot.utils import WhiteEye_on_cmd
 
 
 # @command(pattern="^.cmds", outgoing=True)
