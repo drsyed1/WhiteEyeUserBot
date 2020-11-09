@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String
 
-from fridaybot.modules.sql_helper import BASE, SESSION
+from WhiteEyeUserBot.modules.sql_helper import BASE, SESSION
 
 
 class PMPermit(BASE):
