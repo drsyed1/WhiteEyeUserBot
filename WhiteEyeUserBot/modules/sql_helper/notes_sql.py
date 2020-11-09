@@ -1,5 +1,5 @@
 try:
-    from fridaybot.modules.sql_helper import BASE, SESSION
+    from WhiteEyeUserBot.modules.sql_helper import BASE, SESSION
 except ImportError:
     raise Exception("Hello!")
 from sqlalchemy import Column, String, UnicodeText
