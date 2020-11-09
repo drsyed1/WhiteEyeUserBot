@@ -16,7 +16,7 @@ if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
     os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
 
 
-@WHITEEYE.on(events.NewMessage(pattern=r"\.lslocal", outgoing=True))
+@WhiteEye.on(events.NewMessage(pattern=r"\.lslocal", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
