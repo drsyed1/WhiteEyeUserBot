@@ -19,7 +19,7 @@ from telethon.utils import get_display_name
 from WhiteEyeUserBot.Configs import Config
 
 
-@friday.on(
+@WhiteEye.on(
     events.NewMessage(
         incoming=True,
         blacklist_chats=Config.UB_BLACK_LIST_CHAT,
