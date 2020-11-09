@@ -15,7 +15,7 @@
 import time
 from datetime import datetime
 
-from WhiteEyeBot import Lastupdate
+from WhiteEyeUserBot import Lastupdate
 
 
 def get_readable_time(seconds: int) -> str:
