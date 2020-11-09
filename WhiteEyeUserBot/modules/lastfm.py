@@ -20,7 +20,7 @@ from WhiteEyeBot import (
     bot,
     lastfm,
 )
-from WhiteEyeBot.events import register
+from WhiteEyeUserBot.events import register
 
 # =================== CONSTANT ===================
 LFM_BIO_ENABLED = "```last.fm current music to bio is now enabled.```"
