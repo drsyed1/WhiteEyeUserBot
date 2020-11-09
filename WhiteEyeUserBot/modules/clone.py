@@ -12,7 +12,7 @@ from telethon.tl.types import MessageEntityMentionName
 from WhiteEyeUserBot.utils import WhiteEye_on_cmd
 
 
-@friday.on(friday_on_cmd(pattern="clone ?(.*)"))
+@WhiteEye.on(WhiteEye_on_cmd(pattern="clone ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
