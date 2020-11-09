@@ -8,7 +8,7 @@ import random
 
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
-from uniborg.util import WhiteEyeBon_cmd
+from uniborg.util import WhiteEye_on_cmd
 
 from WhiteEyeBot import ALIVE_NAME
 
