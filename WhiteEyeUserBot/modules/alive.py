@@ -6,7 +6,6 @@ from uniborg.util import WhiteEye_on_cmd, sudo_cmd
 
 from WhiteEyeUserBot import ALIVE_NAME, Lastupdate
 from WhiteEyeUserBot.Configs import Config
-from WhiteEyeUserBot.modules import currentversion
 
 
 # Functions
