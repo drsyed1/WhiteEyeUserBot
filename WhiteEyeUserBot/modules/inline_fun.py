@@ -1,4 +1,4 @@
-fromWhiteEyeBot.utils import WhiteEye_on_cmd
+from WhiteEyeUserBot.utils import WhiteEye_on_cmd
 from var import Var
 
 
