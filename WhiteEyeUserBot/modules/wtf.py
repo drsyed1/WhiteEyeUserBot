@@ -7,10 +7,10 @@ Available Commands:
 
 import asyncio
 
-from WhiteEyeUserBot.utils import WhiteEye  _on_cmd
+from WhiteEyeUserBot.utils import WhiteEye_on_cmd
 
 
-@WhiteEye   .on(WhiteEye   _on_cmd("wtf"))
+@WhiteEye.on(WhiteEye_on_cmd("wtf"))
 async def _(event):
     if event.fwd_from:
         return
