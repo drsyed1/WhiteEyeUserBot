@@ -3,14 +3,14 @@ Syntax: .invite <User(s)>"""
 
 from telethon import functions
 
-from WhiteEyeUserBot.utils import friday_on_cmd
+from WhiteEyeUserBot.utils import WhiteEye_on_cmd
 
 """Invite the user(s) to the current chat
 Syntax: .invite <User(s)>"""
 
 from telethon import functions
 
-from WhiteEyeUserBot.utils import edit_or_reply, friday_on_cmd, sudo_cmd
+from WhiteEyeUserBot.utils import edit_or_reply, WhiteEye_on_cmd, sudo_cmd
 
 
 @WhiteEye.on(WhiteEye_on_cmd(pattern="invite ?(.*)"))
