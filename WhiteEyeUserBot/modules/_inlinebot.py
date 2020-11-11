@@ -91,7 +91,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "Please get your own Userbot, and don't use mine!"
+            reply_pop_up_alert = "Please get your own WhiteEye, and don't use mine!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(
@@ -101,7 +101,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     )
     async def on_plug_in_callback_query_handler(event):
         if not event.query.user_id == bot.uid:
-            sedok = "Who The Fuck Are You? Get Your Own Friday."
+            sedok = "Who The Fuck Are You? Get Your Own WhiteEye."
             await event.answer(sedok, cache_time=0, alert=True)
             return
         plugin_name = event.data_match.group(1).decode("UTF-8")
@@ -146,7 +146,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def rip(event):
         await event.get_chat()
         him_id = event.query.user_id
-        text1 = "You Have Chosed A Probhited Option. Therefore, You Have Been Blocked By UserBot. 🇮🇳"
+        text1 = "You Have Chosed A Probhited Option. Therefore, You Have Been Blocked and Reported By WhiteEye. 🇮🇳"
         await event.edit("Choice Not Accepted ❌")
         await borg.send_message(event.query.user_id, text1)
         await borg(functions.contacts.BlockRequest(event.query.user_id))
@@ -160,7 +160,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         await event.get_chat()
         him_id = event.query.user_id
         await event.edit("Choice Accepted ✔️")
-        text2 = "Ok. Please Wait Until My Master Approves. Don't Spam Or Try Anything Stupid. \nThank You For Contacting Me."
+        text2 = "Ok. Please Wait Until My Boss Approves Your Choice. Don't Spam Or Try Anything Stupid or else You Will Be Blocked. \nThank You For Contacting Me."
         await borg.send_message(event.query.user_id, text2)
         await tgbot.send_message(
             LOG_CHAT,
@@ -173,7 +173,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         await event.get_chat()
         him_id = event.query.user_id
         await event.edit("Choice Accepted ✔️")
-        text3 = "Ok, Wait. You can Ask After Master Approves You. Kindly, Wait."
+        text3 = "Ok, Wait. You can Ask After My Boss Approves You Don't do any Irritating here For That You Will Be Bloced. Kindly, Wait."
         await borg.send_message(event.query.user_id, text3)
         await tgbot.send_message(
             LOG_CHAT,
@@ -192,7 +192,7 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = sorted(helpable_modules)
     modules = [
         custom.Button.inline(
-            "{} {} {}".format("✘", x, "✘"), data="us_plugin_{}".format(x)
+            "{} {} {}".format("==", x, "=="), data="us_plugin_{}".format(x)
         )
         for x in helpable_modules
     ]
