@@ -29,18 +29,12 @@ async def cmd_list(event):
             else:
                 await event.edit(input_str + " is not a valid plugin!")
         else:
-            f"""`Userbot Helper for {DEFAULTUSER} to reveal all the commands of `**[WhiteEye](https://t.me/WhiteEyeOT/)**\n\n"""
-        try:
-                results = await bot.inline_query(  # pylint:disable=E0602
-                    tgbotusername, help_string
-                )
-                await results[0].click(
-                    event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
-                )
-                await event.delete()
-            except BaseException:
-                await event.edit(
-                    f"This bot has inline disabled. Please enable it to use `{CMD_HNDLR}help`.\nGet help from [here](t.me/TeleBotHelpChat)"
-                )
-
+            help_string = """WhiteEye Userbot Modules Are Listed Here this is to reveal all commands of WhiteEye!\n
+For More Help or Support Visit @WhiteEyeOT"""
+            results = await bot.inline_query(  # pylint:disable=E0602
+                tgbotusername, help_string
+            )
+            await results[0].click(
+                event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
+            )
             await event.delete()
