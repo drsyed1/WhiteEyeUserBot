@@ -6,7 +6,6 @@ import requests
 from telethon import Button, custom, events, functions
 
 from WhiteEyeUserBot import ALIVE_NAME, CMD_LIST
-from WhiteEyeUserBot.modules import inlinestats
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:
