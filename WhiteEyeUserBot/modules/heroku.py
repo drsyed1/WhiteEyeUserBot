@@ -1,7 +1,7 @@
 # Copyright (C) 2020 Adek Maulana.
 # All rights reserved.
 """
-   Heroku manager for your fridaybot
+   Heroku manager for your WhiteEyeUserbot
 """
 
 import asyncio
@@ -22,7 +22,7 @@ heroku_api = "https://api.heroku.com"
 
 
 @WhiteEye.on(
-    friday_on_cmd(pattern="(set|get|del) var(?: |$)(.*)(?: |$)([\s\S]*)", outgoing=True)
+    WhiteEye_on_cmd(pattern="(set|get|del) var(?: |$)(.*)(?: |$)([\s\S]*)", outgoing=True)
 )
 @WhiteEye.on(
     sudo_cmd(pattern="(set|get|del) var(?: |$)(.*)(?: |$)([\s\S]*)", allow_sudo=True)
