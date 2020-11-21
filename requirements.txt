@@ -4,7 +4,7 @@ PyGithub
 git+https://github.com/ytdl-org/youtube-dl.git
 git+https://github.com/mrdayamzaidi/Telethon.git
 iplookup
-git+https://github.com/mrdayamzaidi/pydl.git
+git+https://github.com/mrdayamzaidi/pytube.git
 pytesseract
 spotdl
 aiofiles
@@ -65,3 +65,4 @@ validators
 youtube-search
 youtube-search-python
 wget
+
