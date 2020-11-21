@@ -1,9 +1,10 @@
-Pillow>=5.3.0
+Pillow
+glitch_this
 PyGithub
-youtube-dl
-git+https://github.com/mrdayamzaidi/Telethon
+git+https://github.com/ytdl-org/youtube-dl.git
+git+https://github.com/mrdayamzaidi/Telethon.git
 iplookup
-git+https://github.com/mrdayamzaidi/pytube
+git+https://github.com/mrdayamzaidi/pydl.git
 pytesseract
 spotdl
 aiofiles
