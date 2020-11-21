@@ -16,9 +16,9 @@ from telethon.tl.types import MessageMediaPhoto
 from WhiteEyeUserBot.utils import WhiteEye_on_cmd, sudo_cmd
 
 
-@WhiteEye.on(WhiteEye_on_cmd(pattern=r"nsfw"))
-@WhiteEye.on(sudo_cmd(pattern=r"nsfw", allow_sudo=True))
-async def nsfw(event):
+@WhiteEye.on(WhiteEye_on_cmd(pattern=r"pcheck"))
+@WhiteEye.on(sudo_cmd(pattern=r"pcheck", allow_sudo=True))
+async def pcheck(event):
     url = "https://nsfw-categorize.it/api/upload"
     await event.edit("`Processing..`")
     replymsg = await event.get_reply_message()
