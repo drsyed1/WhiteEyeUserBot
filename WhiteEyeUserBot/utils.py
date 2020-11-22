@@ -682,4 +682,4 @@ def start_assistant(shortname):
         mod.only_pvt = only_pvt()
         spec.loader.exec_module(mod)
         sys.modules["WhiteEyeUserBot.modules.assistant" + shortname] = mod
-        print("Assistant Has imported " + shortname
+        print("Assistant Has imported " + shortname)
