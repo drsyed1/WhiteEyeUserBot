@@ -6,7 +6,7 @@ from uniborg.util import WhiteEye_on_cmd, sudo_cmd
 
 from WhiteEyeUserBot import ALIVE_NAME, Lastupdate
 from WhiteEyeUserBot.Configs import Config
-from WhiteEyeUserBot.modules import currentversion
+
 
 
 # Functions
@@ -48,7 +48,6 @@ pm_caption += "➥ **Python:** `3.7.4` \n"
 pm_caption += f"➥ **Uptime** : `{uptime}` \n"
 pm_caption += "➥ **Database Status:**  `Functional`\n"
 pm_caption += "➥ **Current Branch** : `master`\n"
-pm_caption += f"➥ **Version** : `{currentversion}`\n"
 pm_caption += f"➥ **My Boss** : {DEFAULTUSER} \n"
 pm_caption += "➥ **Heroku Database** : `AWS - Working Properly`\n\n"
 pm_caption += "➥ **License** : [GNU General Public License v3.0](https://github.com/mrdayamzaidi/WhiteEyeUserBot/blob/main/LICENSE)\n"
