@@ -1,3 +1,4 @@
+  
 import functools
 import inspect
 import logging
@@ -8,6 +9,13 @@ from telethon import events
 
 from WhiteEyeUserBot import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot
 from WhiteEyeUserBot.Configs import Config
+from WhiteEyeUserBot.wraptools import (
+    am_i_admin,
+    ignore_bot,
+    ignore_fwd,
+    ignore_grp,
+    ignore_pm,
+)
 from var import Var
 
 cmdhandler = Config.COMMAND_HAND_LER
@@ -90,6 +98,7 @@ def load_module(shortname):
         import sys
         from pathlib import Path
 
+        import WhiteEyeUserBot.modules
         import WhiteEyeUserBot.utils
 
         path = Path(f"WhiteEyeUserBot/modules/{shortname}.py")
@@ -103,6 +112,7 @@ def load_module(shortname):
         import sys
         from pathlib import Path
 
+        import WhiteEyeUserBot.modules
         import WhiteEyeUserBot.utils
 
         path = Path(f"WhiteEyeUserBot/modules/{shortname}.py")
@@ -117,14 +127,21 @@ def load_module(shortname):
         # support for uniborg
         sys.modules["uniborg.util"] = WhiteEyeUserBot.utils
         sys.modules["WhiteEye.util"] = WhiteEyeUserBot.utils
+        sys.modules["userbot.utils"] = WhiteEyeUserBot.utils
+        sys.modules["userbot.plugins"] = WhiteEyeUserBot.modules
         mod.Config = Config
+        mod.ignore_grp = ignore_grp()
+        mod.ignore_pm = ignore_pm()
+        mod.ignore_bot = ignore_bot()
+        mod.am_i_admin = am_i_admin()
+        mod.ignore_fwd = ignore_fwd()
         mod.borg = bot
         mod.WhiteEye = bot
         # support for paperplaneextended
         sys.modules["WhiteEyeUserBot.events"] = WhiteEyeUserBot.utils
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["ot.modules." + shortname] = mod
+        sys.modules["WhiteEyeUserBot.modules." + shortname] = mod
         print("Successfully imported " + shortname)
 
 
@@ -318,7 +335,7 @@ def errors_handler(func):
             ftext += "\nyou may not report this error if you've"
             ftext += "\nany confidential data here, no one will see your data\n\n"
 
-            ftext += "--------BEGIN WHITEEYE USERBOT TRACEBACK LOG--------"
+            ftext += "--------BEGIN WhiteEye USERBOT TRACEBACK LOG--------"
             ftext += "\nDate: " + date
             ftext += "\nGroup ID: " + str(errors.chat_id)
             ftext += "\nSender ID: " + str(errors.sender_id)
@@ -665,4 +682,4 @@ def start_assistant(shortname):
         mod.only_pvt = only_pvt()
         spec.loader.exec_module(mod)
         sys.modules["WhiteEyeUserBot.modules.assistant" + shortname] = mod
-        print("Assistant Has imported " + shortname)
+        print("Assistant Has imported " + shortname
