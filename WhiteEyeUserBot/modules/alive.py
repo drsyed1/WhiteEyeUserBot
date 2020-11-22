@@ -53,7 +53,7 @@ pm_caption += "➥ **Heroku Database** : `AWS - Working Properly`\n\n"
 pm_caption += "➥ **License** : [GNU General Public License v3.0](https://github.com/mrdayamzaidi/WhiteEyeUserBot/blob/main/LICENSE)\n"
 pm_caption += "➥ **Copyright** : By [WhiteEyeUserBotOwner](https://t.me/mrdayamzaidi)\n"
 pm_caption += "➥ **Check Stats By Doing** `.stat`. \n\n"
-pm_caption += "[🇮🇳 Deploy WhiteEyeUserBot 🇮🇳](https://telegra.ph/FRIDAY-06-15)"
+pm_caption += "[🇮🇳 Deploy WhiteEyeUserBot 🇮🇳](https://telegra.ph/Dayam-11-22)"
 
 
 @WhiteEye.on(WhiteEye_on_cmd(pattern=r"alive"))
