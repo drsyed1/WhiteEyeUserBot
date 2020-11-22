@@ -58,7 +58,7 @@ pm_caption += "[🇮🇳 Deploy WhiteEyeUserBot 🇮🇳](https://telegra.ph/FRI
 
 @WhiteEye.on(WhiteEye_on_cmd(pattern=r"alive"))
 @WhiteEye.on(sudo_cmd(pattern=r"alive", allow_sudo=True))
-async def friday(alive):
+async def WhiteEye(alive):
     await alive.get_chat()
     """ For .alive command, check if the bot is running.  """
     await borg.send_file(alive.chat_id, PM_IMG, caption=pm_caption)
