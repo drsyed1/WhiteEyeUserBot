@@ -141,6 +141,5 @@ async def deploy_start(tgbot, message, refspec, remote):
     await message.edit(
         "Updation Sucessfull ! Now Restarting To Finish This Process. Try `.alive` To Check If I Am Alive \n© @WhiteEyeOT"
     )
-    await remote.push(refspec=refspec)
     await tgbot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
